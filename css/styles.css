@@ -1,0 +1,205 @@
+body{
+    font-family: caro-Black, sans-serif;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+.f-center{
+    justify-content: center;
+}
+
+.headerImg{
+    background: url("../assets/hero-bg.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100vw;
+    min-width: 1030px;
+    height: 100vh;
+    margin: auto;
+}
+
+.mainNav{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+nav ul li a{
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+nav ul li a:hover .underline{
+    right: 0;
+    left:0;
+    transform: scaleX(1);
+}
+.spanText{
+    position: relative;
+    z-index: 3;
+}
+
+.underline{
+    position: absolute;
+    height: 2px;
+    background-color: #f22e4c;
+    bottom: -3px;
+    right: 50%;
+    left:50%;
+    transform: scaleX(0);
+    transition: .3s ease-in-out;
+}
+
+.mainNav div{
+    padding-right: 50px;
+}
+
+.mainNav nav{
+    padding: 20px;
+    width: 40%;
+}
+.mainNav div a{
+    padding: 7px 20px;
+    background: #f22e4c;
+    color: white;
+}
+
+.user{
+    width: 30px;
+    height: 30px;
+    border: green solid 1px;
+}
+
+.headerImg>div:nth-of-type(2){
+
+    text-align: center;
+    margin: calc(50vh - 210px) auto 0 auto;
+}
+
+h1{
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.01em;
+}
+
+h1+span{
+    color: #aaaaaa;
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+
+.formulaire{
+
+    min-width: 1030px;
+    width: 1100px;
+    margin: auto;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 7px;
+}
+form{
+    max-width: 1200px;
+    min-width: 300px;
+    margin: auto;
+}
+
+.select-css{
+    width: 250px;
+    height: 40px;
+    /*display: block;*/
+    border: none ;
+    border-left: 1px solid grey;
+    margin: 0;
+    appearance: none;
+    background-color: #fff;
+    outline:none;
+    padding-left: 20px;
+}
+.multi-choices{
+    position: relative;
+}
+.multi-choices:after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #070707;
+}
+
+input[type="text"] {
+    height: 38px;
+    width: 600px;
+    color: #949494;
+    border: none;
+    outline:none;
+    padding-left: 20px;
+}
+
+input[type="submit"] {
+
+    color: white;
+    border: none;
+    outline:none;
+    background: #f22e4c;
+    padding: 13px 15px 12px 15px;
+    text-transform: uppercase;
+}
+
+.boutonGroup{
+    margin: 20px auto 0 auto;
+    height: 50px;
+    width: 900px;
+}
+
+.boutonGroup a:before{
+    position: absolute;
+    left: 20px;
+    top: 6px;
+}
+
+
+.boutonGroup a:nth-child(1):before{
+    content: url("../assets/cat-1.png");
+}
+.boutonGroup a:nth-child(2):before{
+    content: url("../assets/cat-2.png");
+}
+.boutonGroup a:nth-child(3):before{
+    content: url("../assets/cat-3.png");
+}
+.boutonGroup a:nth-child(4):before{
+    content: url("../assets/cat-4.png");
+}
+.boutonGroup a:nth-child(5):before{
+    content: url("../assets/cat-5.png");
+    top: 10px;
+}
+.boutonGroup a:nth-child(6):before{
+    content: url("../assets/cat-6.png");
+    top: 10px;
+}
+
+.BoutonCategories{
+    padding: 10px 15px 10px 55px;
+    border: white solid 1px;
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
