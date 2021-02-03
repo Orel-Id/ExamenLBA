@@ -18,8 +18,17 @@ body{
 .f-center{
     justify-content: center;
 }
+.f-column{
+    flex-direction: column;
+}
+.f-row{
+    flex-direction: row;
+}
 .flex-wrap{
     flex-wrap: wrap;
+}
+.marg-auto{
+    margin: auto;
 }
 .headerImg{
     background: url("../assets/hero-bg.jpg") no-repeat;
@@ -465,5 +474,45 @@ main section h1{
 
 .rental:hover:before{
     background:url("../assets/rental-pink.png") no-repeat;
+    background-size:100%;
+}
+
+/*GROUP IMG*/
+.ImgContent{
+    width: 1000px;
+    height: 500px;
+}
+
+.img-right,.img-left{
+    width: 49%;
+    height: 100%;
+}
+
+.a-space-between{
+    align-content: space-between;
+}
+
+.img-left{
+    background:url("../assets/fl-1.jpg") no-repeat;
+    background-size:auto 100%;
+}
+.img-right-small-2,.img-right-small-1{
+    width: 48%;
+    height: 280px;
+}
+
+.img-right-small-2{
+    background:url("../assets/fl-2.jpg") no-repeat;
+    background-size:100%;
+}
+.img-right-small-1{
+    background:url("../assets/fl-3.jpg") no-repeat;
+    background-size:100%;
+}
+
+.img-right>div~div{
+    width: 100%;
+    height: 48%;
+    background:url("../assets/fl-4.jpg") no-repeat;
     background-size:100%;
 }
