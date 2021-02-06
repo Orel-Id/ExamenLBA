@@ -3,6 +3,12 @@ body{
     box-sizing: border-box;
     background-color: #f4f5f6;
 }
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
 .flex{
     display: flex;
 }
@@ -106,7 +112,6 @@ nav ul li a:hover .underline{
 .user:hover .icon{
     fill: #f22e4c;
 }
-
 
 
 .icon {
@@ -265,30 +270,75 @@ main section h1{
     color: black;
     text-transform: capitalize;
 }
+/* --- CARD --- */
 .card{
     margin-top: 20px;
-    flex-basis: 320px;
+    flex-basis: 32%;
     height: 470px;
     background-color: white;
 }
 
+.card:nth-of-type(3n+2){
+    margin: 20px 2% 0 2%;
+}
+
 .card div:first-child:not(.stars){
-    background: url("../assets/list-1.jpg") no-repeat;
-    background-size: cover;
+
     width: 100%;
     height: 50%;
     position: relative;
+}
+
+.img-card{
+    width: 100%
 }
 .popUp{
     color: white;
     padding: 10px 15px 10px 15px;
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 15px;
+    top: 15px;
 }
 .color-R{
     background: #f22e4c;
 }
+.color-B{
+    background: #2ab2f0;
+}
+.color-Y{
+    background: #dcd629;
+}
+.tools{
+    width: 80px;
+    right: 20px;
+    bottom: 25px;
+
+}
+.b-svg{
+    position: absolute;
+    top: calc(50% - 7px);
+    left: calc(50% - 8px);
+    transform: scale(-1, 1);
+}
+.B-tools{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    outline-style:none;
+}
+.B-tools:hover{
+    opacity: 90%;
+}
+.B-tools:active .icon-button{
+    fill: #f22e4c;
+}
+.icon-button{
+    fill: white;
+}
+
 .contenuCard{
    padding: 35px 15px 20px 25px;
     /*border: red 1px solid;*/
@@ -302,9 +352,30 @@ main section h1{
     display: inline-block;
     width: 50px;
     height: 50px;
+
+}
+#five:before{
+    background:url("../assets/list_icon-5.png") no-repeat;
+    background-size:100%;
+}
+#four:before{
+    background:url("../assets/list_icon-4.png") no-repeat;
+    background-size:100%;
+}
+#three:before{
+    background:url("../assets/list_icon-3.png") no-repeat;
+    background-size:100%;
+}
+#two:before{
+    background:url("../assets/list_icon-2.png") no-repeat;
+    background-size:100%;
+}
+#one:before{
     background:url("../assets/list_icon-1.png") no-repeat;
     background-size:100%;
 }
+
+
 .lineH{
     position: absolute;
     left: 0;
@@ -393,10 +464,10 @@ main section h1{
 .open{
     color: #16cb16;
 }
-.close{
+.closed{
     color: red;
 }
-.BottomCard span:first-child:before{
+.ico:before{
     content: "";
     position: absolute;
     left: 0;
@@ -404,7 +475,21 @@ main section h1{
     display: inline-block;
     width: 25px;
     height: 25px;
+}
+.rest:before{
     background:url("../assets/list_small_icon-1.png") no-repeat;
+    background-size:100%;
+}
+.food:before{
+    background:url("../assets/list_small_icon-2.png") no-repeat;
+    background-size:100%;
+}
+.hotel:before{
+    background:url("../assets/list_small_icon-3.png") no-repeat;
+    background-size:100%;
+}
+.shop:before{
+    background:url("../assets/list_small_icon-4.png") no-repeat;
     background-size:100%;
 }
 
@@ -663,6 +748,11 @@ footer input[type="submit"]{
 .copyright div:last-child a{
     color: #aaaaaa;
 }
+
+.copyright div:last-child a:hover{
+    color: #f22e4c;
+}
+
 .icon-secondary {
     fill: #f22e4c;
 }
