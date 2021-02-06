@@ -762,3 +762,110 @@ footer input[type="submit"]{
     height: 10px;
     margin-left: 3px;
 }
+
+/* --- EFFET SLIDE BOUTON ---*/
+
+/* BORDURE DU HAUT */
+
+.haut:after,.haut:before{
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -56px;
+    /*right:133px;*/
+    right: 220%;
+    height: 2px;
+}
+
+.haut:before {
+    background: #f22e4c;
+    transition: .3s ease-in-out;
+}
+
+.haut:after{
+    background: white;
+    transition: .3s ease-in-out;
+    transition-delay: 0.2s;
+}
+.BoutonCategories:hover .haut:before,.BoutonCategories:hover .haut:after{
+    right:-16px;
+}
+
+.droite,.bas,.gauche,.haut{
+    display: inline-block;
+    position: relative;
+}
+
+/* BORDURE DROITE */
+
+.droite:before,.droite:after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    bottom:28px;
+    right:-16px;
+    width: 2px;
+}
+
+.droite:before{
+    background: #f22e4c;
+    transition: bottom .3s ease-in-out;
+    transition-delay: 0.4s;
+}
+.droite:after{
+    background: white;
+    transition: bottom .3s ease-in-out;
+    transition-delay: 0.6s;
+}
+.BoutonCategories:hover .droite:before,.BoutonCategories:hover .droite:after{
+    bottom:-10px;
+}
+
+/* BORDURE GAUCHE */
+.gauche:before,.gauche:after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    top:28px;
+    left:-56px;
+    width: 2px;
+}
+.gauche:before{
+    background: #f22e4c;
+    transition: top .3s ease-in-out;
+    transition-delay: 1.5s;
+}
+.gauche:after{
+    background: white;
+    transition: top .3s ease-in-out;
+    transition-delay: 1.6s;
+}
+.BoutonCategories:hover .gauche:before,.BoutonCategories:hover .gauche:after {
+    top:-10px;
+}
+
+/* BORDURE BAS */
+
+.bas:before,.bas:after{
+    content: "";
+    position: absolute;
+    bottom:-11px;
+    right:-16px;
+    /*left: 95px;*/
+    left:220%;
+    height: 2px;
+}
+.bas:before{
+    background:#f22e4c;
+    transition: left .3s ease-in-out;
+    transition-delay: 0.9s;
+}
+.bas:after{
+    background: white;
+    transition: left .3s ease-in-out;
+    transition-delay: 1.2s;
+}
+.BoutonCategories:hover .bas:before,.BoutonCategories:hover .bas:after{
+    left:-56px;
+}
+
