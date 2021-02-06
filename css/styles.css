@@ -692,13 +692,10 @@ footer div:first-child{
     position: relative;
 }
 
-.newsLetter div:first-child{
+.newsLetter div:first-child,.footer-form{
     width: 50%;
 }
 
-.newsLetter div:last-child{
-    width: 50%;
-}
 h4{
     text-transform: capitalize;
     font-size: 21px;
@@ -712,7 +709,7 @@ h4+span{
 
 footer input[type="email"] {
     height: 38px;
-    width: 80%;
+    width: 100%;
     color: #949494;
     border: none;
     outline:none;
