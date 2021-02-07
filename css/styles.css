@@ -56,6 +56,35 @@ h1 + span {
     display: inline-block;
     margin-bottom: 45px;
 }
+/* ICON HEADER */
+.icon {
+    fill: white;
+}
+
+.user {
+    width: 40px;
+    height: 40px;
+    border: white 3px solid;
+    border-radius: 50%;
+    position: relative;
+}
+
+.user:hover .icon {
+    fill: #f22e4c;
+}
+
+.user:hover{
+    border: #f22e4c 3px solid;
+}
+
+
+.user > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* FIN ICON HEADER */
 
 main section h1 {
     color: black;
@@ -505,7 +534,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     /* MENU */
     .headerImg{
         display: none;
@@ -515,6 +544,28 @@ input[type="submit"] {
         display: none;
         background: dimgray;
         width: 100vw;
+    }
+
+    #menuP nav ul li a:hover .spanText{
+        color: #f22e4c;
+    }
+
+    .addButton {
+        text-align: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+    .addButton:hover .icon-button{
+        fill: #f22e4c;
+    }
+    .admin{
+        padding: 0 10px 0 10px;
+        width: 120px;
+    }
+    .user:hover .icon{
+        fill: #f22e4c;
     }
 
     #menuP nav{
@@ -527,6 +578,18 @@ input[type="submit"] {
         padding: 10px 0 10px 0;
         background: dimgray;
     }
+    #menuP li:last-of-type{
+        background: #2f2d2d;
+        padding: 20px 0 20px 0;
+    }
+    .CloseLink{
+        margin: 20px 0 0 0;
+    }
+    .CloseLink:hover{
+        color: #2ab2f0;
+        font-weight: bold;
+    }
+
     a{
         text-decoration: none;
         color: white;
@@ -622,7 +685,7 @@ input[type="submit"] {
         padding: 10px 5px 10px 5px;
     }
 
-    /* FORMULAIRE A FAIRE..... */
+    /* FORM */
 
     .formulaire {
         width: 100%;
@@ -651,6 +714,7 @@ input[type="submit"] {
 
     .multi-choices {
         position: relative;
+        width: 65%;
     }
 
     .multi-choices:after {
@@ -687,7 +751,7 @@ input[type="submit"] {
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
 
     #menu,#menuP{
         display: none;
@@ -758,28 +822,12 @@ input[type="submit"] {
         outline: none;
     }
 
-
     .user {
-        width: 40px;
-        height: 40px;
         border: white 1px solid;
-        border-radius: 50%;
-        position: relative;
     }
 
-    .user:hover .icon {
-        fill: #f22e4c;
-    }
-
-
-    .icon {
-        fill: white;
-    }
-
-    .user > div {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+    .user:hover{
+        border: #f22e4c 1px solid;
     }
 
     .headerImg > div:nth-of-type(2) {
