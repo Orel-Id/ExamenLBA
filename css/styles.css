@@ -1,3 +1,15 @@
+@font-face {
+    font-family: caro-font;
+    src: url("../images/Cairo/Cairo-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: light-caro-font;
+    src: url("../images/Cairo/Cairo-Light.ttf");
+    font-weight: normal;
+}
+
+
 body{
     font-family: caro-Black, sans-serif;
     box-sizing: border-box;
@@ -202,27 +214,27 @@ main section h1 {
 }
 
 #five:before {
-    background: url("../assets/list_icon-5.png") no-repeat;
+    background: url("../images/list_icon-5.png") no-repeat;
     background-size: 100%;
 }
 
 #four:before {
-    background: url("../assets/list_icon-4.png") no-repeat;
+    background: url("../images/list_icon-4.png") no-repeat;
     background-size: 100%;
 }
 
 #three:before {
-    background: url("../assets/list_icon-3.png") no-repeat;
+    background: url("../images/list_icon-3.png") no-repeat;
     background-size: 100%;
 }
 
 #two:before {
-    background: url("../assets/list_icon-2.png") no-repeat;
+    background: url("../images/list_icon-2.png") no-repeat;
     background-size: 100%;
 }
 
 #one:before {
-    background: url("../assets/list_icon-1.png") no-repeat;
+    background: url("../images/list_icon-1.png") no-repeat;
     background-size: 100%;
 }
 
@@ -250,12 +262,12 @@ main section h1 {
 }
 
 .star-full {
-    background: url("../assets/star-full.png") no-repeat;
+    background: url("../images/star-full.png") no-repeat;
     background-size: 100%;
 }
 
 .star-empty {
-    background: url("../assets/star-empty.png") no-repeat;
+    background: url("../images/star-empty.png") no-repeat;
     background-size: 100%;
 }
 
@@ -284,7 +296,7 @@ main section h1 {
     display: inline-block;
     width: 15px;
     height: 15px;
-    background: url("../assets/lieu.svg") no-repeat;
+    background: url("../images/lieu.svg") no-repeat;
     background-size: 100%;
 }
 
@@ -296,7 +308,7 @@ main section h1 {
     display: inline-block;
     width: 15px;
     height: 15px;
-    background: url("../assets/phone.svg") no-repeat;
+    background: url("../images/phone.svg") no-repeat;
     background-size: 100%;
 }
 
@@ -342,22 +354,22 @@ main section h1 {
 }
 
 .rest:before {
-    background: url("../assets/list_small_icon-1.png") no-repeat;
+    background: url("../images/list_small_icon-1.png") no-repeat;
     background-size: 100%;
 }
 
 .food:before {
-    background: url("../assets/list_small_icon-2.png") no-repeat;
+    background: url("../images/list_small_icon-2.png") no-repeat;
     background-size: 100%;
 }
 
 .hotel:before {
-    background: url("../assets/list_small_icon-3.png") no-repeat;
+    background: url("../images/list_small_icon-3.png") no-repeat;
     background-size: 100%;
 }
 
 .shop:before {
-    background: url("../assets/list_small_icon-4.png") no-repeat;
+    background: url("../images/list_small_icon-4.png") no-repeat;
     background-size: 100%;
 }
 
@@ -377,7 +389,7 @@ main section h1 {
 
 /* IMAGE LEFT */
 .img-left {
-    background: url("../assets/fl-1.jpg") no-repeat;
+    background: url("../images/fl-1.jpg") no-repeat;
     background-size: auto 100%;
     position: relative;
 }
@@ -653,24 +665,24 @@ input[type="submit"] {
 
     /* IMAGE LEFT */
     .img-left {
-        background: url("../assets/fl-1.jpg") no-repeat;
+        background: url("../images/fl-1.jpg") no-repeat;
         background-size: 100%;
         position: relative;
     }
     /* IMAGE RIGHT */
     .img-right-small-2 {
-        background: url("../assets/fl-2.jpg") no-repeat;
+        background: url("../images/fl-2.jpg") no-repeat;
         background-size: 100%;
     }
 
     .img-right-small-1 {
-        background: url("../assets/fl-3.jpg") no-repeat;
+        background: url("../images/fl-3.jpg") no-repeat;
         background-size: 100%;
     }
     .img-right-bottom {
         width: 100%;
         height: 48%;
-        background: url("../assets/fl-4.jpg") no-repeat;
+        background: url("../images/fl-4.jpg") no-repeat;
         background-size: 100%;
         position: relative;
     }
@@ -758,7 +770,7 @@ input[type="submit"] {
     }
 
     .headerImg {
-        background: url("../assets/hero-bg.jpg") no-repeat;
+        background: url("../images/hero-bg.jpg") no-repeat;
         background-size: cover;
         position: absolute;
         left: 0;
@@ -915,28 +927,28 @@ input[type="submit"] {
 
 
     .boutonGroup a:nth-child(1):before {
-        content: url("../assets/cat-1.png");
+        content: url("../images/cat-1.png");
     }
 
     .boutonGroup a:nth-child(2):before {
-        content: url("../assets/cat-2.png");
+        content: url("../images/cat-2.png");
     }
 
     .boutonGroup a:nth-child(3):before {
-        content: url("../assets/cat-3.png");
+        content: url("../images/cat-3.png");
     }
 
     .boutonGroup a:nth-child(4):before {
-        content: url("../assets/cat-4.png");
+        content: url("../images/cat-4.png");
     }
 
     .boutonGroup a:nth-child(5):before {
-        content: url("../assets/cat-5.png");
+        content: url("../images/cat-5.png");
         top: 10px;
     }
 
     .boutonGroup a:nth-child(6):before {
-        content: url("../assets/cat-6.png");
+        content: url("../images/cat-6.png");
         top: 10px;
     }
 
@@ -1014,62 +1026,62 @@ input[type="submit"] {
     }
 
     .restaurant:before {
-        background: url("../assets/fork-grey.png") no-repeat;
+        background: url("../images/fork-grey.png") no-repeat;
         background-size: 100%;
     }
 
     .restaurant:hover:before {
-        background: url("../assets/fork-pink.png") no-repeat;
+        background: url("../images/fork-pink.png") no-repeat;
         background-size: 100%;
     }
 
     .Shopping:before {
-        background: url("../assets/shop-grey.png") no-repeat;
+        background: url("../images/shop-grey.png") no-repeat;
         background-size: 100%;
     }
 
     .Shopping:hover:before {
-        background: url("../assets/shop-pink.png") no-repeat;
+        background: url("../images/shop-pink.png") no-repeat;
         background-size: 100%;
     }
 
     .travel:before {
-        background: url("../assets/travel-grey.png") no-repeat;
+        background: url("../images/travel-grey.png") no-repeat;
         background-size: 100%;
     }
 
     .travel:hover:before {
-        background: url("../assets/travel-pink.png") no-repeat;
+        background: url("../images/travel-pink.png") no-repeat;
         background-size: 100%;
     }
 
     .beauty:before {
-        background: url("../assets/beauty-grey.png") no-repeat;
+        background: url("../images/beauty-grey.png") no-repeat;
         background-size: 100%;
     }
 
     .beauty:hover:before {
-        background: url("../assets/beauty-pink.png") no-repeat;
+        background: url("../images/beauty-pink.png") no-repeat;
         background-size: 100%;
     }
 
     .event:before {
-        background: url("../assets/event-grey.png") no-repeat;
+        background: url("../images/event-grey.png") no-repeat;
         background-size: 100%;
     }
 
     .event:hover:before {
-        background: url("../assets/event-pink.png") no-repeat;
+        background: url("../images/event-pink.png") no-repeat;
         background-size: 100%;
     }
 
     .rental:before {
-        background: url("../assets/rental-grey.png") no-repeat;
+        background: url("../images/rental-grey.png") no-repeat;
         background-size: 100%;
     }
 
     .rental:hover:before {
-        background: url("../assets/rental-pink.png") no-repeat;
+        background: url("../images/rental-pink.png") no-repeat;
         background-size: 100%;
     }
 
@@ -1086,25 +1098,25 @@ input[type="submit"] {
 
     /* IMAGE LEFT */
     .img-left {
-        background: url("../assets/fl-1.jpg") no-repeat;
+        background: url("../images/fl-1.jpg") no-repeat;
         background-size: auto 100%;
         position: relative;
     }
 
     /* IMAGE RIGHT */
     .img-right-small-2 {
-        background: url("../assets/fl-2.jpg") no-repeat;
+        background: url("../images/fl-2.jpg") no-repeat;
         background-size: auto 100%;
     }
 
     .img-right-small-1 {
-        background: url("../assets/fl-3.jpg") no-repeat;
+        background: url("../images/fl-3.jpg") no-repeat;
         background-size: auto 100%;
     }
     .img-right-bottom {
         width: 100%;
         height: 48%;
-        background: url("../assets/fl-4.jpg") no-repeat;
+        background: url("../images/fl-4.jpg") no-repeat;
         background-size: auto 100%;
         position: relative;
     }
